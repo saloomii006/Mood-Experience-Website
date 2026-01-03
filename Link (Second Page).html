@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+body
+{
+background-color:#ffa1b2;
+}
+
+    .Thank-you-for-trusting-me-•ᴗ•-word {
+      display: inline-block;
+      transition: transform 0.6s ease, color 0.3s ease;
+      cursor: pointer;
+      font-size: 250%;
+      font-weight: bold;
+    }
+
+    .Thank-you-for-trusting-me-•ᴗ•-word:hover {
+      transform: rotate(360deg);
+      color: #8c3856;
+    }
+  </style>
+</head>
+
+<body>
+
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+<img src="hellokitty.gif" alt="Hello Kitty" style="width:48px;height:48px;">
+
+
+<div style="font-size:200%; color:#8f4f4f; text-align:center; margin-top:250px;">
+  <span class="Thank-you-for-trusting-me-•ᴗ•-word" onmouseover="shootFireworks()">
+Thank you for trusting me •ᴗ•
+</span> 
+</div>
+
+<p style = "color:#8f4f4f; margin-top: 100px; text-align:center;"> Work done by: Salma Omar Alwaqfi<br>Section: 2<br> Student ID: 202410130 </p>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  function shootFireworks() {
+    var duration = 3 * 1000;
+    var end = Date.now() + duration;
+
+    (function frame() {
+      confetti({
+        particleCount: 3,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 },
+        colors: ['#ffffff', '#cf7091']
+      });
+      confetti({
+        particleCount: 3,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 },
+        colors: ['#ffffff', '#cf7091']
+      });
+
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    }());
+  }
+</script>
+</body>
+</html>

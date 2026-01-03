@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+<title>Mood Experience</title>
+<style> 
+
+body { background-color:#ffa1b2; }
+div { width: 100px; height: 60px; transition: width 2s;}
+div:hover { width: 200px; }
+
+.fun-word { display: inline-block; transition: transform 0.6s ease, color 0.3s ease; cursor: pointer; }
+.fun-word:hover { transform: rotate(360deg); color: #ff8c00; }
+.kittygif { width:48px;height:48px; }
+</style>
+<script>
+  function happyMood() 
+ {
+    document.body.style.backgroundColor = "#F5EB27";
+    alert("Since you clicked this button, this means you are happy today!");
+    document.getElementById("happysound").play();
+    
+  }
+
+  function sadMood()
+ {
+    document.body.style.backgroundColor = "#2d3252";
+    alert("Today wasnt your day, better luck next time bud...");
+    document.getElementById("sadsound").play();
+}
+
+   function excitedMood()
+ {
+    document.body.style.backgroundColor = "#FFC03D";
+    alert("YAY! Since you clicked this button this means your are absolutely EXCITED!");
+    document.getElementById("excitedsound").play();
+ }
+   function angryMood()
+ {
+    document.body.style.backgroundColor = "#8c1d1d";
+    alert(">:c ABSOLUTE RAGEEEEE!");
+    document.getElementById("angrysound").play();
+}
+
+function anxiousMood()
+{
+	document.body.style.backgroundColor = "#969059";
+	alert("Is your stomach upset? Do you feel butterflies in your stomach?~");
+	document.getElementById("anxioussound").play();
+}
+
+function sleepyMood()
+{
+	document.body.style.backgroundColor = "#08162e";
+	alert("Zzzzzzz...");
+	document.getElementById("sleepysound").play();
+}
+
+function disgustedMood()
+{
+	document.body.style.backgroundColor = "#243d11";
+	alert("Ew...");
+	document.getElementById("disgustedsound").play();
+}
+</script>
+</head>
+
+<body>
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+<img src="hellokitty.gif" alt="Hello Kitty" class="kittygif" />
+
+
+
+<h1 style = "text-align:center; color: #8f4f4f; margin-bottom:40px; margin-top:50px;">Mood Experience Web Page</h1>
+
+<p style = "font-size:150%; color: #bd5c5c; margin-left:20px;">
+
+<p style="font-size:150%; color:#bd5c5c; margin-left:20px; margin-right:20px; margin-bottom:40px;">
+  This is an <span 
+    style="transition:0.3s; cursor:pointer;"
+    onmouseover="this.style.color='#f74340'; this.style.fontSize='160%';"
+    onmouseout="this.style.color=''; this.style.fontSize='';">
+    interactive
+  </span> 
+website, a silly yet 
+ <span class="fun-word">fun</span>
+way to express how you are feeling today using pictures and sounds! <abbr title = "Dont worry your device wont be hacked :)">Click</abbr> on the interactive buttons down below to see how you are feeling today!
+</p>
+
+
+<p style = "font-size:150%; color: #8a4c4c; text-align:center; margin-bottom:60px;">What is your mood today?</p>
+
+
+<div style="display:inline-block; text-align:center; margin-right:10px; margin-left:320px;">
+  <span style="color:gold; font-size:150%;">Happy</span><br>
+  <button onclick = "happyMood()">•ᴗ•</button>
+</div>
+<audio id="happysound" src="happy.mp3" type="audio/mpeg"></audio>
+
+
+
+
+
+<div style="display:inline-block; text-align:center; vertical-align: top;">
+  <span style="color:#333dc4; font-size:150%;"><i>Sad</i></span><br>
+  <button onclick = "sadMood()">˙◠˙</button>
+</div>
+<audio id="sadsound" src="sad.mp3" type="audio/mpeg"></audio>
+
+
+
+<div style="display:inline-block; text-align:center; margin-left:20px; margin-right:20px; vertical-align: top;">
+  <span style="color:#db7a30; font-size:150%;">EXCITED</span><br>
+<button onclick = "excitedMood()">•ᗜ•</button></br> 
+</div>
+<audio id="excitedsound" src="excited.mp3" type="audio/mpeg"></audio>
+
+
+
+<div style="display:inline-block; text-align:center; margin-left:20px; vertical-align: top;">
+  <span style="color:#c22727; font-size:150%;"><i>Angry</i></span><br>
+<button onclick = "angryMood()">•̀ ᴖ •́ </button>
+</div>
+<audio id="angrysound" src="angry.mp3" type="audio/mpeg"></audio>
+
+
+<div style="display:inline-block; text-align:center; margin-left:20px; vertical-align: top;">
+  <span style="color:#595531;font-size:150%;">anxious</span><br>
+<button onclick = "anxiousMood()">ᵕ • - •</button>
+</div>
+<audio id="anxioussound" src="anxious.mp3" type="audio/mpeg"></audio>
+
+
+
+<div style="display:inline-block; text-align:center; margin-left:20px; vertical-align: top;">
+  <span style="color:#18335e;font-size:150%;"><i>Sleepy</i></span><br>
+<button onclick = "sleepyMood()">– - –</button>
+</div>
+<audio id="sleepysound" src="sleepy.mp3" type="audio/mpeg"></audio>
+
+<div style="display:inline-block; text-align:center; margin-left:20px; vertical-align: top;">
+  <span style="color:#3f6622;font-size:150%;"><b>Disgusted</span><br></b>
+<button onclick = "disgustedMood()">≖⌓≖</button>
+</div>
+<audio id="disgustedsound" src="disgusted.mp3" type="audio/mpeg"></audio>
+
+<h2 style="text-align:bottom; margin-top; color: #8f4f4f;">Click this link for a surprise!</h2>
+<div style="text-align:center; margin-top:20px;">
+  <a href="Link.html" class="my-link">Click~</a>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
